@@ -6,6 +6,8 @@ $themeBlue: #22577a;
 $themeText: #757575;
 $textFont: 'Poppins', sans-serif;
 $titleFont: 'Proza Libre', sans-serif;
+$baseTextFontColor:#3c3838;
+$basePFontSize:1.1em;
 
 /*
     A- GENERAL STYLE
@@ -31,7 +33,7 @@ $titleFont: 'Proza Libre', sans-serif;
 
 html {
     overflow-x: hidden;
-    height: 100%;
+    /*height: 100%;*/
     margin: 0;
 }
 
@@ -53,14 +55,28 @@ h6 {
 
 p {
     font-family: $textFont;
-    color:$themeText;
+    color:$baseTextFontColor;
     font-weight: 500;
     line-height: 1.5em;
+    font-size:$basePFontSize;
 }
 
 img {
     width: 100%;
     display: block;
+}
+
+section.cbd-default-section {
+    margin: 0.8em;
+}
+
+@media (min-width:1024px) {
+    section.cbd-default-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
 
 .admin-bar {
@@ -84,6 +100,10 @@ img {
 
 .page-container {
     margin:auto;
+}
+
+.pt-100 {
+    padding-top:100px;
 }
 
 @media(max-width:768px) {
@@ -234,6 +254,11 @@ img {
     i.fas {
         margin-right: 0.3em;
     }
+
+    .site-general-info {
+        font-size:1.3em;
+        font-weight: bold;
+    }
 }
 
 .cbd-top-header-list li {
@@ -259,7 +284,7 @@ img {
 
 .cbd-main-header {
     position: relative;
-    background: #000;
+    background: rgba(0, 0, 0, 0.823);
     color: $themeWhite;
 }
 
@@ -273,7 +298,7 @@ img {
 .cbd-nav li a {
     padding: 1.2rem;
     display: block;
-    background: #000;
+    /*background: #000;*/
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -668,7 +693,7 @@ img {
 
 .s1-img-container {
     width:70%;
-    margin:1rem auto;
+    margin: 1rem 0 1rem auto;
 }
 /*************************************************************************************
                          SECTION2

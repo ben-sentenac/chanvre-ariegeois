@@ -1,6 +1,6 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
-<main class="page-container <?= CBD\CBDTheme::get_theme_page_template();?>">
+<main class="page-container<?= CBD\CBDTheme::get_theme_page_template();?>">
 
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
     

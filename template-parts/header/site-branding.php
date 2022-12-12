@@ -1,3 +1,4 @@
+<?php if(is_front_page()): ?>
 <div class="home cbd-hero-slider">
     <div class="cbd-hero-bg">
         <div class="logo">
@@ -9,3 +10,7 @@
     </div>
     <div class="cbd-hero-overlay"></div>
 </div>
+<?php endif;?>
+<?php if(is_woocommerce()): ?>
+   
+<?php endif; ?>
